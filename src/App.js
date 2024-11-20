@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import InputForm from "./components/InputForm";
+import RevenueTable from "./components/RevenueTable";
+import RevenueSummary from "./components/RevenueSummary";
+import "./styles/global.css";
 
 function App() {
+  const [revenueData, setRevenueData] = useState(null);
+
+  const handleCalculate = (data) => {
+    setRevenueData(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Revenue Upside Calculator</h1>
+      <InputForm onCalculate={handleCalculate} />
+      {revenueData && (
+        <>
+          <RevenueTable data={revenueData} />
+          <RevenueSummary data={revenueData} />
+        </>
+      )}
     </div>
   );
 }

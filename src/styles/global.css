@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+  }
+  

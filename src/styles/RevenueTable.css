@@ -1,0 +1,39 @@
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .revenue-table th,
+  .revenue-table td {
+    border: 1px solid #140e0e;
+    padding: 8px;
+  }
+  
+  .revenue-table .highlight {
+    background-color: #1f201e;
+    font-weight: bold;
+  }
+
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid black; /* Black border for the table */
+  }
+  
+  .table-container th,
+  .table-container td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black; /* Black border for cells */
+  }
+  
+  .table-container {
+    background: rgba(222, 207, 207, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 20px; /* Adjust spacing as necessary */
+  }
+  

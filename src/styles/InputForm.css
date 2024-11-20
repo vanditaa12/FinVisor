@@ -1,0 +1,74 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border for visibility */
+  border-radius: 10px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.1), 
+    rgba(255, 255, 255, 0)
+  ); /* Transparent gradient */
+  backdrop-filter: blur(10px); /* Glass effect for better blending */
+}
+
+form label {
+  font-size: 1.2rem;
+  color: #180202; /* White text for better visibility on gradient */
+  width: 100%;
+  text-align: left;
+  max-width: 400px;
+}
+
+form input[type="number"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2); /* Transparent dark background */
+  color: #0e0101; /* White text for visibility */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="number"]::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Light placeholder text */
+}
+
+form input[type="number"]:focus {
+  border-color: #fff; /* Bright border on focus */
+}
+
+form button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff; /* White text */
+  background-color: rgba(38, 186, 65, 0.5); /* Transparent black button */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgba(123, 161, 129, 0.7); /* Slightly darker on hover */
+  transform: translateY(-2px);
+}
+
+.form-image {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.form-image img {
+  max-width: 100px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}

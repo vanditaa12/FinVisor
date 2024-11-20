@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/your-background-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  filter: brightness(0.8) blur(3px); /* Lightens and blurs the background */
+}
+
+.container {
+  position: relative;
+  z-index: 1; /* Ensures content stays sharp and visible over the blurred background */
+}
+
